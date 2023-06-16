@@ -95,4 +95,14 @@ public class GameScene : MonoBehaviour
             _inputData.Vertical = 0f;
         }
     }
+
+    public void OnBreakButtonDown()
+    {
+        _inputData.IsBreaking = true;
+    }
+
+    public void OnBreakButtonUp()
+    {
+        _inputData.IsBreaking = false;
+    }
 }
